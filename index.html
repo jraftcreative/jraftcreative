@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JRaft Creative — Web Design & Development for Growing Businesses</title>
-  <meta name="description" content="JRaft Creative builds high-converting websites, ecommerce stores, and web applications for businesses in music, F&B, retail, and education.">
+  <title>JRaft Creative — Premium Web Design & Development Studio</title>
+  <meta name="description" content="JRaft Creative builds high-converting websites, ecommerce stores, and web applications for businesses in music, F&B, retail, and education across Singapore and beyond.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
 <body>
 
   <!-- ========== NAV ========== -->
-  <nav class="nav">
+  <nav class="nav" id="nav">
     <div class="container">
       <a href="#" class="nav-logo">JRaft <span>Creative</span></a>
       <ul class="nav-links" id="navLinks">
@@ -47,41 +47,68 @@
     </div>
   </section>
 
+  <!-- ========== TRUST BAR ========== -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-inner reveal">
+        <p class="trust-label">Trusted by businesses across Singapore</p>
+        <div class="trust-stats">
+          <div class="trust-stat">
+            <span class="number">15+</span>
+            <span class="label">Projects Delivered</span>
+          </div>
+          <div class="trust-stat">
+            <span class="number">4</span>
+            <span class="label">Industries Served</span>
+          </div>
+          <div class="trust-stat">
+            <span class="number">100%</span>
+            <span class="label">Client Satisfaction</span>
+          </div>
+          <div class="trust-stat">
+            <span class="number">2 wks</span>
+            <span class="label">Avg. Turnaround</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ========== SERVICES ========== -->
   <section class="section" id="services">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <p class="section-label">Services</p>
         <h2>What We Build</h2>
         <p>End-to-end web solutions tailored to your business needs.</p>
       </div>
       <div class="services-grid">
-        <div class="service-card">
+        <div class="service-card reveal reveal-d1">
           <div class="service-icon">🎨</div>
           <h3>Business Websites</h3>
           <p>Custom-designed, mobile-responsive websites that showcase your brand and convert visitors into customers.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card reveal reveal-d2">
           <div class="service-icon">🛒</div>
           <h3>Ecommerce Stores</h3>
           <p>Online stores with product catalogs, secure checkout, payment integration, and inventory management.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card reveal reveal-d3">
           <div class="service-icon">⚡</div>
           <h3>Web Applications</h3>
           <p>Booking systems, client portals, dashboards, and custom tools that streamline your operations.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card reveal reveal-d1">
           <div class="service-icon">📱</div>
           <h3>Landing Pages</h3>
           <p>High-converting campaign pages for promotions, launches, and lead generation. Fast turnaround.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card reveal reveal-d2">
           <div class="service-icon">🔍</div>
           <h3>SEO & Performance</h3>
           <p>Search engine optimisation, speed optimisation, and analytics setup to maximise your online visibility.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card reveal reveal-d3">
           <div class="service-icon">🤖</div>
           <h3>AI Integration</h3>
           <p>Chatbots, automated workflows, and AI-powered features to help your business work smarter.</p>
@@ -93,66 +120,105 @@
   <!-- ========== PORTFOLIO ========== -->
   <section class="section" id="work">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <p class="section-label">Portfolio</p>
-        <h2>Recent Work</h2>
-        <p>Projects we've delivered for clients across industries.</p>
+        <h2>Selected Work</h2>
+        <p>Real projects we've designed and built for clients across industries.</p>
       </div>
-      <div class="portfolio-grid">
-        <div class="portfolio-card">
-          <div class="portfolio-thumbnail">
-            <span class="overlay-text">Harmony Music Academy</span>
+
+      <!-- Featured Project -->
+      <div class="portfolio-featured reveal">
+        <a href="#" class="portfolio-card" target="_blank" rel="noopener">
+          <div class="portfolio-thumb-wrap">
+            <div class="portfolio-thumbnail grad-music">
+              <span class="portfolio-thumb-icon">🎵</span>
+              <span class="portfolio-badge">Featured</span>
+              <span class="portfolio-view">View Project</span>
+            </div>
           </div>
           <div class="portfolio-info">
+            <div class="portfolio-meta">
+              <span class="portfolio-type">Music &middot; Presentation</span>
+            </div>
             <h3>Harmony Music Academy</h3>
-            <p>Business proposal and website for a premium music school launching in Singapore.</p>
+            <p>Business proposal slide deck and brand identity for a premium music school launching in Singapore. Built with Reveal.js featuring interactive slides, financial projections, and market analysis.</p>
             <div class="portfolio-tags">
-              <span class="tag">Web Design</span>
-              <span class="tag">Presentation</span>
+              <span class="tag">Slide Deck</span>
+              <span class="tag">Branding</span>
+              <span class="tag">Reveal.js</span>
               <span class="tag">Music</span>
             </div>
           </div>
-        </div>
-        <div class="portfolio-card">
-          <div class="portfolio-thumbnail">
-            <span class="overlay-text">Coming Soon</span>
-          </div>
-          <div class="portfolio-info">
-            <h3>Restaurant Ordering Platform</h3>
-            <p>Online ordering system with menu management, table reservations, and payment integration.</p>
-            <div class="portfolio-tags">
-              <span class="tag">Ecommerce</span>
-              <span class="tag">F&B</span>
-              <span class="tag">Web App</span>
+        </a>
+      </div>
+
+      <!-- Grid Projects -->
+      <div class="portfolio-grid">
+        <a href="#" class="portfolio-card reveal reveal-d1" target="_blank" rel="noopener">
+          <div class="portfolio-thumb-wrap">
+            <div class="portfolio-thumbnail grad-restaurant">
+              <span class="portfolio-thumb-icon">🍽️</span>
+              <span class="portfolio-view">View Project</span>
             </div>
           </div>
-        </div>
-        <div class="portfolio-card">
-          <div class="portfolio-thumbnail">
-            <span class="overlay-text">Coming Soon</span>
+          <div class="portfolio-info">
+            <div class="portfolio-meta">
+              <span class="portfolio-type">F&B &middot; Website</span>
+            </div>
+            <h3>The Golden Hearth</h3>
+            <p>Modern restaurant website with online menu, reservation system, and gallery. Warm, inviting design that captures the dining experience.</p>
+            <div class="portfolio-tags">
+              <span class="tag">Web Design</span>
+              <span class="tag">F&B</span>
+              <span class="tag">Responsive</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="portfolio-card reveal reveal-d2" target="_blank" rel="noopener">
+          <div class="portfolio-thumb-wrap">
+            <div class="portfolio-thumbnail grad-tutor">
+              <span class="portfolio-thumb-icon">📚</span>
+              <span class="portfolio-view">View Project</span>
+            </div>
           </div>
           <div class="portfolio-info">
-            <h3>Tutor Booking Platform</h3>
-            <p>Scheduling and booking system for private tutors with student management and payment processing.</p>
+            <div class="portfolio-meta">
+              <span class="portfolio-type">Education &middot; Platform</span>
+            </div>
+            <h3>BrightPath Tutors</h3>
+            <p>Tutor discovery and booking platform with subject filtering, tutor profiles, testimonials, and a streamlined enquiry flow.</p>
             <div class="portfolio-tags">
               <span class="tag">Web App</span>
               <span class="tag">Education</span>
               <span class="tag">Booking</span>
             </div>
           </div>
-        </div>
-        <div class="portfolio-card">
-          <div class="portfolio-thumbnail">
-            <span class="overlay-text">Coming Soon</span>
+        </a>
+        <a href="#" class="portfolio-card reveal reveal-d1" target="_blank" rel="noopener">
+          <div class="portfolio-thumb-wrap">
+            <div class="portfolio-thumbnail grad-ecommerce">
+              <span class="portfolio-thumb-icon">🛍️</span>
+              <span class="portfolio-view">View Project</span>
+            </div>
           </div>
           <div class="portfolio-info">
-            <h3>Retail Brand Ecommerce</h3>
-            <p>Full ecommerce experience with product filtering, wishlists, and integrated shipping for a lifestyle brand.</p>
+            <div class="portfolio-meta">
+              <span class="portfolio-type">Retail &middot; Ecommerce</span>
+            </div>
+            <h3>MŌDA — Fashion & Lifestyle</h3>
+            <p>Premium ecommerce storefront with product collections, editorial layouts, category browsing, and a curated shopping experience.</p>
             <div class="portfolio-tags">
               <span class="tag">Ecommerce</span>
               <span class="tag">Retail</span>
               <span class="tag">UI/UX</span>
             </div>
+          </div>
+        </a>
+        <div class="portfolio-card reveal reveal-d2" style="border-style: dashed; display: flex; align-items: center; justify-content: center; min-height: 200px;">
+          <div class="portfolio-info" style="text-align: center; padding: 40px 28px;">
+            <h3 style="color: var(--text-muted); font-size: 1.1rem;">Your Project Here</h3>
+            <p style="margin-bottom: 20px;">Let's build something great together. We're ready for our next project.</p>
+            <a href="#contact" class="btn btn-secondary" style="display: inline-flex;">Get in Touch</a>
           </div>
         </div>
       </div>
@@ -162,28 +228,28 @@
   <!-- ========== INDUSTRIES ========== -->
   <section class="section" id="industries">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <p class="section-label">Industries</p>
         <h2>Who We Work With</h2>
         <p>Deep expertise in industries where we deliver the most impact.</p>
       </div>
       <div class="industries-grid">
-        <div class="industry-card">
+        <div class="industry-card reveal reveal-d1">
           <span class="industry-icon">🎵</span>
           <h3>Music & Creative</h3>
           <p>Music schools, studios, performers, and creative agencies.</p>
         </div>
-        <div class="industry-card">
+        <div class="industry-card reveal reveal-d2">
           <span class="industry-icon">🍽️</span>
           <h3>F&B & Hospitality</h3>
           <p>Restaurants, cafes, catering, and food delivery brands.</p>
         </div>
-        <div class="industry-card">
+        <div class="industry-card reveal reveal-d3">
           <span class="industry-icon">🛍️</span>
           <h3>Retail & Ecommerce</h3>
           <p>Fashion, lifestyle, specialty goods, and DTC brands.</p>
         </div>
-        <div class="industry-card">
+        <div class="industry-card reveal reveal-d4">
           <span class="industry-icon">📚</span>
           <h3>Education</h3>
           <p>Tuition centres, enrichment schools, online courses, and edtech.</p>
@@ -195,25 +261,25 @@
   <!-- ========== PROCESS ========== -->
   <section class="section" id="process">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <p class="section-label">How We Work</p>
         <h2>Simple, Transparent Process</h2>
         <p>From first call to launch in as fast as 2 weeks.</p>
       </div>
       <div class="process-grid">
-        <div class="process-step">
+        <div class="process-step reveal reveal-d1">
           <h3>Discovery</h3>
           <p>We learn about your business, goals, and audience to define the project scope.</p>
         </div>
-        <div class="process-step">
+        <div class="process-step reveal reveal-d2">
           <h3>Design</h3>
           <p>We create mockups and prototypes for your review. Iterate until it's perfect.</p>
         </div>
-        <div class="process-step">
+        <div class="process-step reveal reveal-d3">
           <h3>Build</h3>
           <p>We develop and test your site with clean code, fast performance, and mobile responsiveness.</p>
         </div>
-        <div class="process-step">
+        <div class="process-step reveal reveal-d4">
           <h3>Launch</h3>
           <p>We deploy, set up analytics, and provide a handover with training and support.</p>
         </div>
@@ -224,13 +290,13 @@
   <!-- ========== PRICING ========== -->
   <section class="section" id="pricing">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <p class="section-label">Pricing</p>
         <h2>Transparent Pricing</h2>
         <p>No hidden fees. Choose the package that fits your needs.</p>
       </div>
       <div class="pricing-grid">
-        <div class="pricing-card">
+        <div class="pricing-card reveal reveal-d1">
           <h3>Starter</h3>
           <div class="price">$2,500 <span>SGD</span></div>
           <p class="pricing-desc">Perfect for small businesses needing a professional online presence.</p>
@@ -244,7 +310,7 @@
           </ul>
           <a href="#contact" class="btn btn-secondary">Get Started</a>
         </div>
-        <div class="pricing-card featured">
+        <div class="pricing-card featured reveal reveal-d2">
           <h3>Business</h3>
           <div class="price">$5,500 <span>SGD</span></div>
           <p class="pricing-desc">For growing businesses that need more functionality and polish.</p>
@@ -258,7 +324,7 @@
           </ul>
           <a href="#contact" class="btn btn-primary">Get Started</a>
         </div>
-        <div class="pricing-card">
+        <div class="pricing-card reveal reveal-d3">
           <h3>Premium</h3>
           <div class="price">$10,000+ <span>SGD</span></div>
           <p class="pricing-desc">Full ecommerce, web apps, and complex custom builds.</p>
@@ -288,38 +354,75 @@
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container">
-      <ul class="footer-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <p>&copy; 2025 JRaft Creative. All rights reserved.</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">JRaft <span>Creative</span></a>
+          <p>Premium web design and development for businesses that want to stand out online.</p>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <a href="#services">Business Websites</a>
+            <a href="#services">Ecommerce Stores</a>
+            <a href="#services">Web Applications</a>
+            <a href="#services">Landing Pages</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#work">Portfolio</a>
+            <a href="#process">Process</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h4>Industries</h4>
+            <a href="#industries">Music & Creative</a>
+            <a href="#industries">F&B & Hospitality</a>
+            <a href="#industries">Retail & Ecommerce</a>
+            <a href="#industries">Education</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 JRaft Creative. All rights reserved.</p>
+        <p>Designed & built in Singapore</p>
+      </div>
     </div>
   </footer>
 
   <!-- ========== JS ========== -->
   <script>
     // Mobile nav toggle
-    document.getElementById('navToggle').addEventListener('click', function () {
-      document.getElementById('navLinks').classList.toggle('active');
+    var navToggle = document.getElementById('navToggle');
+    var navLinks = document.getElementById('navLinks');
+
+    navToggle.addEventListener('click', function () {
+      navLinks.classList.toggle('active');
     });
 
-    // Close mobile nav on link click
     document.querySelectorAll('.nav-links a').forEach(function (link) {
       link.addEventListener('click', function () {
-        document.getElementById('navLinks').classList.remove('active');
+        navLinks.classList.remove('active');
       });
     });
 
-    // Navbar shadow on scroll
+    // Navbar scroll effect
+    var nav = document.getElementById('nav');
     window.addEventListener('scroll', function () {
-      var nav = document.querySelector('.nav');
-      if (window.scrollY > 10) {
-        nav.style.boxShadow = '0 1px 12px rgba(0,0,0,0.06)';
-      } else {
-        nav.style.boxShadow = 'none';
-      }
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Scroll reveal
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      revealObserver.observe(el);
     });
   </script>
 
